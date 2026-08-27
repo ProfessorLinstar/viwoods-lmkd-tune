@@ -1,6 +1,6 @@
-id=lmkd_tune
-name=lmkd PSI Stall + Watermark Tune
+id=viwoods_lmkd_tune
+name=Viwoods lmkd tune
 version=v1.0
 versionCode=1
 author=eldenlord
-description=Raises ro.lmk.psi_complete_stall_ms to 2000 and vm.watermark_scale_factor to 500 to reduce premature lmkd kills on low-RAM MTK devices.
+description=Configures lmkd to reduce background kills on the Viwoods AI Paper Reader. Raises ro.lmk.psi_complete_stall_ms to 2000 and vm.watermark_scale_factor to 500 to reduce premature lmkd kills on low-RAM MTK devices.
