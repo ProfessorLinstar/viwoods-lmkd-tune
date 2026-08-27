@@ -1,11 +1,12 @@
 .RECIPEPREFIX = >
 MODULE_ID := lmkd_tune
 ZIP       := module.zip
-FILES     := module.prop system.prop service.sh
+FILES     := module.prop system.prop post-fs-data.sh service.sh
 
 all: $(ZIP)
 
 $(ZIP): $(FILES)
+> chmod 755 post-fs-data.sh service.sh
 > rm -f $(ZIP)
 > zip -r -y $(ZIP) $(FILES)
 
